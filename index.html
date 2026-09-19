@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FocusWatch</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="container">
+        <div class="logo">
+            <span class="focus">Focus</span><span class="watch">Watch</span>
+        </div>
+    </header>
+
+    <hr>
+
+    <main class="video-section">
+
+        <!-- YouTube URL input -->
+        <form id="video-form" class="link-box">
+
+            <input
+                type="text"
+                id="youtube-link"
+                placeholder="Paste your YouTube link here"
+                autocomplete="off"
+            >
+
+            <button type="submit">
+                Watch
+            </button>
+
+        </form>
+
+        <!-- Error message -->
+        <p id="error-message" class="error-message"></p>
+
+        <!-- Video stage -->
+        <div class="video-container">
+
+            <p id="empty-message">
+                Paste a YouTube link above to start watching.
+            </p>
+
+            <iframe
+                id="youtube-player"
+                title="YouTube video player"
+                allow="autoplay; encrypted-media; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+        <!-- Current video information -->
+        <p id="video-info" class="video-info">
+            No video loaded
+        </p>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
