@@ -59,4 +59,4 @@ Open `index.html` in your browser, or use the **Live Server** extension in VS Co
 
 🚧 **FocusWatch is currently under development.**
 
-More features and improvements will be added as the project evolves.
+More features and improvements will be added as the project evolves
